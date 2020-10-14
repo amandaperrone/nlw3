@@ -8,11 +8,28 @@
 
 #container {
     margin: auto; /* só funciona se tiver o display: flex em cima */
-    width: 90%;
+    width: min(90%, 112rem); /*  112 rem = 1120px */
 }
 
 .location, h1, .visit p {
     height: 16vh;
+}
+
+#logo {
+    animation-delay: 50ms;
+}
+
+.location {
+    animation-delay: 100ms;
+}
+
+main h1 {
+    animation-delay: 150ms;
+    font-size: clamp(4rem, 8vw, 8.4rem); /* (mínimo, o que quero, máximo) */
+}
+
+.visit p {
+    animation-delay: 200ms;
 }
 
 .visit a {
@@ -30,28 +47,58 @@
     margin: auto;
 
     transition: background 200ms;
+
+    animation-delay: 250ms;
 }
 
 .visit a:hover{ /* hover => mouse em cima*/
     background: #96feff;
 }
 
-#logo {
-    animation-delay: 50ms;
-}
+/* desktop version */
+@media (min-width: 760px) {
+    #container {
+        padding: 5rem 2rem;
+        /* short hand background: image repeat position / size */
+        background: url("../images/bg.svg") no-repeat 80% / clamp(30rem, 54vw, 56rem);
+        /* background-position: top center; */
+    }
+    header {
+        display: flex;
+        align-items: center; /* só disponível pelo display flex */
+        justify-content: space-between; /* só disponível pelo display flex */
+    }
+    .location, h1, .visit p{
+        height: initial;
+        text-align: initial;
+    }
+    .location {
+        text-align: right;
+        font-size: 2.4rem;
+        line-height: 1.5;
+    }
+    main h1 {
+        font-weight: bold;
+        line-height: 0.88;
 
-.location {
-    animation-delay: 100ms;
-}
+        margin: clamp(10%, 9vh, 12%) 0 4rem;
 
-main h1 {
-    animation-delay: 150ms;
-}
+        width: min(300px, 80%);
+    }
 
-.visit p {
-    animation-delay: 200ms;
-}
+    .visit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.visit a {
-    animation-delay: 250ms;
+    .visit p {
+        font-size: 2.4rem;
+        line-height: 1.5;
+        width: clamp (20rem, 20vw, 30rem);
+    }
+
+    .visit a {
+        margin: initial;
+    }
 }
