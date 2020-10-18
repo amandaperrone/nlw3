@@ -5,6 +5,7 @@ module.exports = [
         lng: "-47.4529492",
         name: "Lar das Meninas",
         description: "Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vunerabilidade social.",
+        whatsapp: "15 98765-4321",
         images: [
             "https://images.unsplash.com/photo-1601927366577-06132f606808?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
             "https://images.unsplash.com/photo-1602540738621-e7dfebf0af79?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
@@ -24,6 +25,7 @@ module.exports = [
         lng: "-47.4971123",
         name: "Lar dos Meninos",
         description: "Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vunerabilidade social.",
+        whatsapp: "15 98765-4321",
         images: [
             "https://images.unsplash.com/photo-1602615644018-d071a559f79a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
             "https://images.unsplash.com/photo-1600690052031-c0a4b1dad84e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
